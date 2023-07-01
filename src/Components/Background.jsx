@@ -1,13 +1,15 @@
 import React from 'react'
+import './Navbar.css'
 
-function Background() {
+function Background(props) {
   return (
     <>
-    <video className="absolute" autoPlay muted loop>
-          <source src="../../Home-Page-Banner.mp4" type="video/mp4" />
+    <div class="absolute w-full overflow-hidden h-[39rem] md:h-[45rem]">
+      <video className={props.class} autoPlay muted loop plays-inline>
+          <source src={props.video} type="video/mp4" />
       </video>
-      <img src= "../../black.webp" class="absolute w-full overflow-hidden opacity-70"/>
-      
+      <img src= {props.black} class={props.class2}/>
+      </div>
     </>
   )
 }

@@ -9,7 +9,7 @@ function Navbar() {
           <a href="" class="flex items-center">
             <img
               src="../../logo.svg"
-              class="h-40 mr-4 sm:h-32"
+              class="h-24 md:h-28 md:mr-4"
               alt="Vivida Logo"
             />
           </a>
