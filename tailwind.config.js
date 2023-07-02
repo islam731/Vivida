@@ -8,9 +8,26 @@ export default {
     extend: {
       spacing: {
         '128': '50rem',
+      },
+      transitionDelay: {
+        '2000': '2000ms',
+      },
+      transitionDuration: {
+        '2000': '2000ms',
+      },
+      scale: {
+        '175': '1.75',
       }
     },
   },
-  plugins: [],
+  plugins: [
+    require('taos/plugin')
+  ],
+  safelist: [
+    '!duration-[0ms]',
+    '!delay-[0ms]',
+    'html.js :where([class*="taos:"]:not(.taos-init))'
+  ],
+  
 }
 
