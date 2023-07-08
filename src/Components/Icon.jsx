@@ -1,17 +1,24 @@
 import React from 'react'
-import { SiCodeforces } from "react-icons/si";
+import { useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function Icon(props) {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <>
-    <section class="delay-[300ms] duration-[600ms] taos:scale-[0.6] taos:opacity-0" data-taos-offset="400">
-    <div>
-      <img src={props.src} class="h-32 mx-auto"/>
+    <div class="mx-auto flex overflow-hidden my-10 " data-aos={props.animation}>
+    <img src={props.src} class="m-5 h-28 translate-y-3"/>
+    <div class="my-10">
+    <h1 class="font-sans font-bold text-2xl mx-auto">{props.text}</h1>
+    <p class="text-gray-500">Brand recognition is the foundation of customer loyalty.</p>
     </div>
-    <div>
-      <h1 class="text-3xl mx-auto my-10 text-center">{props.text}</h1>
+    
     </div>
-    </section>
+    
     
     </>
   )

@@ -4,6 +4,7 @@ import "./Navbar.css";
 function Navbar() {
   return (
     <>
+    <header class="">
       <nav className="absolute w-full overflow-hidden h-40 ">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 ">
           <a href="" class="flex items-center">
@@ -82,6 +83,7 @@ function Navbar() {
           </div>
         </div>
       </nav>
+      </header>
     </>
   );
 }

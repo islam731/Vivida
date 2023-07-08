@@ -9,25 +9,22 @@ export default {
       spacing: {
         '128': '50rem',
       },
-      transitionDelay: {
-        '2000': '2000ms',
+      animationDelay: {
+        275: '275ms',
+        5000: '5s',
       },
-      transitionDuration: {
-        '2000': '2000ms',
+      animationDuration: {
+        2000: '2s',
+        'long': '10s',
+        'very-long': '20s',
       },
-      scale: {
-        '175': '1.75',
+      backgroundImage: {
+        'lightblue': "url('./public/lightblue.jpg')"
       }
     },
+    plugins: [
+      require('tailwindcss-animated')
+    ],
   },
-  plugins: [
-    require('taos/plugin')
-  ],
-  safelist: [
-    '!duration-[0ms]',
-    '!delay-[0ms]',
-    'html.js :where([class*="taos:"]:not(.taos-init))'
-  ],
-  
 }
 

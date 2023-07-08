@@ -2,6 +2,7 @@ import React from 'react'
 import './Navbar.css'
 
 function Background(props) {
+  let videoElement = document.getElementById("video");
   return (
     <>
     <div class="absolute w-full overflow-hidden h-[39rem] md:h-[45rem]">
