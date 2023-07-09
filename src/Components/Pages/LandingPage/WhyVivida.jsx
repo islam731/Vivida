@@ -1,5 +1,6 @@
 import React from 'react'
 import Icon from './Icon'
+import { Link } from "react-router-dom";
 
 const WhyVivida = () => {
   return (
@@ -9,6 +10,14 @@ const WhyVivida = () => {
     <Icon animation="zoom-in" src="../../connections-icon.gif" title="Connections"/>
     <Icon animation="zoom-in" src="../../connections-icon.gif" title="Connections"/>
     <Icon animation="zoom-in" src="../../connections-icon.gif" title="Connections"/>
+    <div  data-aos="fade-up" data-aos-duration="500" class="border-solid rounded-full bg-blue-100 p-7 mb-12 text-xl text-blue-950 font-medium">
+    <button>
+      <Link to="/WhyUs">
+      More About Vivida Hositality
+      </Link>
+    </button>
+    </div>
+    
     </div>
     </>
   )

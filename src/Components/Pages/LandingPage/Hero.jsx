@@ -2,7 +2,7 @@ import React from 'react'
 import Background from './Background'
 import Navbar from '../../Navbar'
 
-function Home() {
+function Hero() {
   return (
     <>
     <div class=" w-full overflow-hidden h-screen w-screen object-cover">
@@ -18,4 +18,4 @@ function Home() {
   )
 }
 
-export default Home
+export default Hero

@@ -1,15 +1,16 @@
 import React from 'react'
-import Home from './Home'
+import Hero from './Hero'
 import Rewards from './Rewards'
 import Socials from './Socials'
 import WhyVivida from './WhyVivida'
+import Footer from './Footer'
 function App() {
 
   return (
     <>
     <div class="overflow-hidden">
       <header>
-      <Home/>
+      <Hero/>
       </header>
       <section class="bg-blue-950 py-7">
         <Socials/>
@@ -20,7 +21,9 @@ function App() {
       <section class="bg-blue-950">
         <WhyVivida/>
       </section>
-     
+      <footer>
+        <Footer/>
+      </footer>
     </div>
     
     </>
