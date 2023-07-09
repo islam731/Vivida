@@ -9,17 +9,8 @@ export default {
       spacing: {
         '128': '50rem',
       },
-      animationDelay: {
-        275: '275ms',
-        5000: '5s',
-      },
-      animationDuration: {
-        2000: '2s',
-        'long': '10s',
-        'very-long': '20s',
-      },
       backgroundImage: {
-        'lightblue': "url('./public/lightblue.jpg')"
+        'bg-qazaq': "url('./public/qazaq.jpg')",
       }
     },
     plugins: [
